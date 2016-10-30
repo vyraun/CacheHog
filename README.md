@@ -1,5 +1,5 @@
-                                CACHE-HOG CODES
-                                --------------
+<center> <h1>CACHE-HOG CODES</h1> </center>
+
 
 Author : Arnab Ghosh 
 
@@ -14,11 +14,10 @@ These cache hog programs have been designed to hog cache capacity. They do so by
 
 Please cite the following work if you use these programs for experiments in your research:
 
-Lavanya Subramanian, Vivek Seshadri, Arnab Ghosh, Samira Khan, and Onur Mutlu, "The Application Slowdown Model: Quantifying and Controlling the Impact of Inter-Application Interference at Shared Caches and Main Memory", Proceedings of the 48th International Symposium on Microarchitecture (MICRO), Waikiki, Hawaii, USA, December 2015.
+Lavanya Subramanian, Vivek Seshadri, Arnab Ghosh, Samira Khan, andÂ Onur Mutlu, "The Application Slowdown Model: Quantifying and Controlling the Impact of Inter-Application Interference at Shared Caches and Main Memory", Proceedings of the 48th International Symposium on Microarchitecture (MICRO), Waikiki, Hawaii, USA, December 2015.
 
 
 2. Description of the basic idea
-
 ----------------
 
 These cache hogs were written for and evaluated on an Intel Core-i5 processor with a 6MB shared cache. The following figure shows a rough schematic of this system with two cores..
@@ -34,7 +33,7 @@ These cache hogs were written for and evaluated on an Intel Core-i5 processor wi
 
 Each core has its own private L1 and L2 cache and the cores share the L3 cache, which in turn connects to the the DRAM main memory.
 
-Our goal is to evict other applications’ cache blocks, when run alongside them. We do so by generating access patterns that evict   existing blocks residing in the L3 cache from the application we are trying to slowdown. 
+Our goal is to evict other applicationsâ€™ cache blocks, when run alongside them. We do so by generating access patterns that evict   existing blocks residing in the L3 cache from the application we are trying to slowdown. 
 
 
 
@@ -54,7 +53,7 @@ cache_bank_parallelism.c
 ------------------------
 
 This program  hogs memory bandwidth by trying to 
-stress the different banks of the DRAM main memory and hence, delay other applications’ memory requests . 
+stress the different banks of the DRAM main memory and hence, delay other applicationsâ€™ memory requests . 
 
 
 cacheoccupy_stride_stream.c
